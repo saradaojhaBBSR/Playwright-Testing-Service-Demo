@@ -1,15 +1,17 @@
 {
   "name": "getstarted",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "type": "commonjs",
   "devDependencies": {
-    "@azure/microsoft-playwright-testing": "^1.0.0-beta.7",
-    "@playwright/test": "^1.50",
-    "@types/node": "^22.5.5"
+    "@azure/identity": "^4.13.0",
+    "@azure/playwright": "^1.1.2",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.0"
   }
 }
