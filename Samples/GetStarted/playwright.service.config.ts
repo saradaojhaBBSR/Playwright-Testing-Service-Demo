@@ -11,6 +11,8 @@ export default defineConfig(
     connectTimeout: 3 * 60 * 1000, // 3 minutes
     os: ServiceOS.LINUX,
     credential: new DefaultAzureCredential(),
+    runName: 'Github Actions Playwright Test Run - ' + new Date().toISOString(),
+    serviceAuthType: 'ACCESS_TOKEN'
   }),
   {
     /*
@@ -21,9 +23,9 @@ export default defineConfig(
     This configuration will replace any existing reporter settings from your base config.
     If you're already using other reporters, add them to this array.
     */
-    reporter: [
-      ["html", { open: "never" }],
-      ["@azure/playwright/reporter"],
-    ],
+    // reporter: [
+    //   ["html", { open: "never" }],
+    //   ["@azure/playwright/reporter"],
+    // ],
   }
 );
